@@ -28,7 +28,7 @@ public class userRegistration {
 		String inputmobileNumber = sc.next(); //7879219494
 		
 		System.out.println("Enter Password");
-		String password = "((?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&*_]).{8,})";
+		String password = "((?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&*_]).{8,})"; //(.)  dot means exactly one anywhere in given limit.
 		String inputPassword = sc.next(); 
 		
 		userRegistration ur = new userRegistration();
