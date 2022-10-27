@@ -16,12 +16,17 @@ public class userRegistration {
 		String inputFirstName = sc.next(); // Shadab = true // shadab = false //
 		
 		System.out.println("Enter Last Name :");
-		String lastName = "^[A-z]{1}[a-z]{2,}$";
+		String lastName = "^[A-Z]{1}[a-z]{2,}$";
 		String inputLastName = sc.next();
+		
+		System.out.println("Enter Email id :");
+		String emailId = "^[a-zA-Z]+([_+-.][a-zA-Z])+[@][a-zA-Z]+[.][a-z]{2,3}([.][a-zA-Z]{2})*$";
+		String inputEmailId = sc.next();
 		
 		userRegistration ur = new userRegistration();
 		System.out.println(ur.userName(firstName, inputFirstName));
 		System.out.println(ur.userName(lastName, inputLastName));
+		System.out.println(ur.userName(emailId, inputEmailId));//abc.xyz@bl.co.in
 
 	}
 
