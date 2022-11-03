@@ -26,7 +26,7 @@ public class userRegistration {
 		userRegistration ur = new userRegistration();
 		System.out.println(ur.userName(firstName, inputFirstName));
 		System.out.println(ur.userName(lastName, inputLastName));
-		System.out.println(ur.userName(emailId, inputEmailId));//abc.xyz@bl.co.in
+		System.out.println(ur.userName(emailId, inputEmailId));    //abc.xyz@bl.co.in
 
 	}
 
